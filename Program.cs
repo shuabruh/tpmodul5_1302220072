@@ -2,6 +2,15 @@
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        HaloGeneric user = new HaloGeneric();
+        user.sapaUser<string>("Joshua");
+    }
+}
+
+public class HaloGeneric
+{
+    public void sapaUser<T>(T user)
+    {
+        Console.WriteLine("Halo user " + user);
     }
 }
